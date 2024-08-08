@@ -1,10 +1,15 @@
 pipeline {
  agent any
  stages {
-  stage ("pring a statement") {
+  stage ("cloning a code") {
    steps {
-    echo "hello world"
+    echo "code is cloned"
     }
    }
+   stage ("testing the source code") {
+    steps {
+     echo "quality of source code is tested"
+   }
   }
- } 
+ }
+}
